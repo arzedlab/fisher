@@ -1,0 +1,110 @@
+{% extends 'base.html'%}
+{% block title %}Welcome to Fisher's Boat!{% endblock %}
+{% block main %}
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0">🌌NG. IP-Logger</h1>
+	                        <p class="hero-paragraph">Find out everything possible about your strange-looking companion or maybe scammer in Internet via our service.😎 And be one step ahead.</p>
+	                        <div class="hero-cta">
+								<a class="button button-primary" href="{{ url_for('create_page')}}">Create</a>
+								<div class="lights-toggle">
+									<input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch" checked="checked">
+									<label for="lights-toggle" class="text-xs"><span>Turn me <span class="label-text">dark</span></span></label>
+								</div>
+							</div>
+						</div>
+						<div class="hero-media">
+							<div class="header-illustration">
+								<img class="header-illustration-image asset-light" src="{{ url_for('static', filename='dist/images/header-illustration-light.svg') }}" alt="Header illustration">
+								<img class="header-illustration-image asset-dark" src="{{ url_for('static', filename='dist/images/header-illustration-dark.svg') }}" alt="Header illustration">
+							</div>
+							<div class="hero-media-illustration">
+								<img class="hero-media-illustration-image asset-light" src="{{ url_for('static', filename='dist/images/hero-media-illustration-light.svg') }}" alt="Hero media illustration">
+								<img class="hero-media-illustration-image asset-dark" src="{{ url_for('static', filename='dist/images/hero-media-illustration-dark.svg') }}" alt="Hero media illustration">
+							</div>
+							<div class="hero-media-container">
+								<img class="hero-media-image asset-light" width="500" src="{{ url_for('static', filename='dist/images/hero-media-light.png') }}" alt="Hero media">
+								<img class="hero-media-image asset-dark" width="500" src="{{ url_for('static', filename='dist/images/hero-media-dark.png') }}" alt="Hero media">
+							</div>
+						</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features section">
+                <div class="container">
+					<div class="features-inner section-inner has-bottom-divider">
+						<div class="features-header text-center">
+							<div class="container-sm">
+								<h2 class="section-title mt-0">Fisher IP Logger</h2>
+	                            <p class="section-paragraph">IP logger will help you determine the IP address of any person</p>
+								<div class="features-image">
+									<img class="features-illustration asset-dark" src="{{ url_for('static', filename='dist/images/features-illustration-dark.svg') }}" alt="Feature illustration">
+									<img class="features-box asset-dark" src="{{ url_for('static', filename='dist/images/features-box-dark.jpg') }}" alt="Feature box">
+									<img class="features-illustration asset-dark" src="{{ url_for('static', filename='dist/images/features-illustration-top-dark.svg') }}" alt="Feature illustration top">
+									<img class="features-illustration asset-light" src="{{ url_for('static', filename='dist/images/features-illustration-light.svg') }}" alt="Feature illustration">
+									<img class="features-box asset-light" src="{{ url_for('static', filename='dist/images/features-box-light.jpg') }}" alt="Feature box">
+									<img class="features-illustration asset-light" src="{{ url_for('static', filename='dist/images/features-illustration-top-light.svg') }}" alt="Feature illustration top">
+								</div>
+							</div>
+                        </div>
+                        <div class="features-wrap">
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img class="asset-light" src="{{ url_for('static', filename='dist/images/feature-01-light.svg') }}" alt="Feature 01">
+										<img class="asset-dark" src="{{ url_for('static', filename='dist/images/feature-01-dark.svg') }}" alt="Feature 01">
+                                    </div>
+									<div class="feature-content">
+                                    	<h3 class="feature-title mt-0">Discover</h3>
+                                    	<p class="text-sm mb-0">Find out who is on the other side of the screen.</p>
+									</div>
+								</div>
+                            </div>
+							<div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img class="asset-light" src="{{ url_for('static', filename='dist/images/feature-02-light.svg') }}" alt="Feature 02">
+										<img class="asset-dark" src="{{ url_for('static', filename='dist/images/feature-02-dark.svg') }}" alt="Feature 02">
+                                    </div>
+									<div class="feature-content">
+                                    	<h3 class="feature-title mt-0">Statistics</h3>
+                                    	<p class="text-sm mb-0">Collect statistics in research pruplosal</p>
+									</div>
+								</div>
+                            </div>
+							<div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img class="asset-light" src="{{ url_for('static', filename='dist/images/feature-03-light.svg') }}" alt="Feature 03">
+										<img class="asset-dark" src="{{ url_for('static', filename='dist/images/feature-03-dark.svg') }}" alt="Feature 03">
+                                    </div>
+									<div class="feature-content">
+                                    	<h3 class="feature-title mt-0">Geo-IP</h3>
+                                    	<p class="text-sm mb-0">IP Tracker is a simple IP tracking tool that will allow you to search, find, track any IP address in the world with great accuracy.</p>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+			<section class="cta section">
+                <div class="container-sm">
+                    <div class="cta-inner section-inner">
+                        <div class="cta-header text-center">
+                            <h2 class="section-title mt-0">Let's Go</h2>
+                            <p class="section-paragraph">Find out everything possible about your strange-looking companion or maybe scammer in Internet via our service.😎 And be one step ahead.</p>
+							<div class="cta-cta">
+								<a class="button button-primary" href="{{ url_for('create_page')}}">CREATE</a>
+							</div>
+					    </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+{% endblock %}
